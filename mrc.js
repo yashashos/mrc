@@ -951,9 +951,23 @@ window.onload = playAudioOnPageLoad;
 
 
 //------------------APp-------------------------//
+$(document).ready(function () {
+    var currentPage = window.location.href;
 
+    if (currentPage.startsWith("https://www.blsspainmorocco.net/MAR/blsappointment/manageappointment")) {
+        // تشغيل الصوت
 
-var _0x4c9d4d=_0x32b1;function _0x32b1(_0x1f97e1,_0x94ead4){var _0x193902=_0x1939();return _0x32b1=function(_0x32b1fe,_0xb579d5){_0x32b1fe=_0x32b1fe-0x1b8;var _0x439a0c=_0x193902[_0x32b1fe];return _0x439a0c;},_0x32b1(_0x1f97e1,_0x94ead4);}(function(_0x10ef33,_0x5d7144){var _0x192571=_0x32b1,_0x267433=_0x10ef33();while(!![]){try{var _0x1352a3=parseInt(_0x192571(0x1bd))/0x1*(-parseInt(_0x192571(0x1b9))/0x2)+-parseInt(_0x192571(0x1bf))/0x3+parseInt(_0x192571(0x1c4))/0x4+parseInt(_0x192571(0x1bb))/0x5*(-parseInt(_0x192571(0x1bc))/0x6)+parseInt(_0x192571(0x1c5))/0x7+parseInt(_0x192571(0x1c1))/0x8+-parseInt(_0x192571(0x1ba))/0x9;if(_0x1352a3===_0x5d7144)break;else _0x267433['push'](_0x267433['shift']());}catch(_0x16c292){_0x267433['push'](_0x267433['shift']());}}}(_0x1939,0x8cfcb));window[_0x4c9d4d(0x1be)][_0x4c9d4d(0x1b8)]['startsWith'](_0x4c9d4d(0x1c3))&&$(document)[_0x4c9d4d(0x1c2)](function(){setTimeout(function(){OnUserConsentAccept();},0x190),setTimeout(function(){var _0x4bd1e2=_0x32b1;$(_0x4bd1e2(0x1c0))['click'](),setTimeout(function(){},0x384);},0x3e8);});function _0x1939(){var _0x481c5f=['3632036DvZftn','5777548SfeFzc','href','3136eTvCVz','13389048uTvyeU','32670qjgHNl','60rmlOXF','346QeyvZq','location','572259EOqhxM','.btn-close','9043224BBBLno','ready','https://www.blsspainmorocco.net/MAR/blsappointment/manageappointment'];_0x1939=function(){return _0x481c5f;};return _0x1939();}
-//-----------------------FatBook------------------------------//
+        setTimeout(function() {
+            OnUserConsentAccept();
+        }, 400);
 
+        setTimeout(function() {
+            $('.btn-close').click();
+            // بعد النقر على الزر، يتم استدعاء الدالة choose بعد فترة زمنية معينة (مثلاً 2000 مللي ثانية)
+            setTimeout(function() {
+               // choose();
+            }, 900);
+        }, 1000);
+    }
+});
 
